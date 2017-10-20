@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lovemefan.packagemangerdemo.browse_app_item">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgApp"
+            android:layout_width="144px"
+            android:layout_height="144px">
+
+        </ImageView>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip">
+
+            <TextView
+                android:id="@+id/tvLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="应用名 : ">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvAppLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dip"
+                android:layout_toRightOf="@id/tvLabel"
+                android:text="Label"
+                android:textColor="#FFD700">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvName1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvLabel"
+                android:text="包名:">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvPkgName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/tvAppLabel"
+                android:layout_below="@id/tvAppLabel"
+                android:textColor="#FFD700" />
+
+            <TextView
+                android:id="@+id/tvName2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvPkgName"
+                android:text="类名:">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvClsName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/tvAppLabel"
+                android:layout_below="@id/tvPkgName"
+                android:textColor="#FFD700" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
